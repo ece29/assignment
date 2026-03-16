@@ -8,6 +8,7 @@ import {
   apiFetch,
   clearAccessToken,
   clearStoredUser,
+  getStoredAccessToken,
   getStoredUser,
   tryRefreshToken
 } from "../lib/api";
@@ -39,9 +40,15 @@ export function TaskDashboard() {
   useEffect(() => {
     const boot = async () => {
       const storedUser = getStoredUser<User>();
+      const storedAccessToken = getStoredAccessToken();
 
       if (storedUser) {
         setUser(storedUser);
+      }
+
+      if (storedAccessToken) {
+        setIsCheckingAuth(false);
+        return;
       }
 
       const refreshed = await tryRefreshToken();
