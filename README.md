@@ -12,3 +12,4 @@ Full-stack task manager built with Node.js, TypeScript, Prisma, SQLite, and Next
    
 
 
+<img width="1916" height="873" alt="image" src="https://github.com/user-attachments/assets/80777da7-b772-4eac-8d6f-e3e6c225106e" />
