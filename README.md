@@ -9,3 +9,6 @@ Full-stack task manager built with Node.js, TypeScript, Prisma, SQLite, and Next
 3. Copy `frontend/.env.example` to `frontend/.env.local`
 4. Run `npm run prisma:migrate`
 5. Start the apps with `npm run dev:backend` and `npm run dev:frontend`
+   
+
+
